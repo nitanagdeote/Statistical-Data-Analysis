@@ -14,3 +14,6 @@ head(z)
 plot(ex)
 head(ex)
 plot(z,ex)
+x-special/nautilus-clipboard
+copy
+file:///home/nita/Documents/udemy_course/Rplot%20exponential%20function.png
