@@ -10,6 +10,8 @@ copy
 file:///home/nita/Documents/udemy_course/Rplot%20exponential%20function.png
 
 
+
+
 ################################3
 number=200
 z<-complex(real = rnorm(number),imaginary = rnorm(number))
