@@ -5,6 +5,11 @@ x<-runif(n,min=-1,max=1)
 #x
 f<-exp(x)
 plot(x,f)
+x-special/nautilus-clipboard
+copy
+file:///home/nita/Documents/udemy_course/Rplot%20exponential%20function.png
+
+
 ################################3
 number=200
 z<-complex(real = rnorm(number),imaginary = rnorm(number))
