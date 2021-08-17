@@ -1,0 +1,5 @@
+y<-c(1:100)
+hist(y)
+mean(y)
+median(y)
+mode(y)
