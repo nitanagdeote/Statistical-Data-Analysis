@@ -1,0 +1,8 @@
+air_covid_data<- read.csv("https://aqicn.org/data-platform/covid19/report/25402-58ef4529/2020",skip=4)
+head(air_covid_data)
+no_of_rows<-nrow(air_covid_data)
+install.packages("dplyr")  
+library("dplyr")  
+set.seed(12345)   
+data_s1 <- sample_n(air_covid_data, 100)
+head(data_s1)
