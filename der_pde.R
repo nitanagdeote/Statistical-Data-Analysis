@@ -24,3 +24,19 @@ cF(5)
 cF(t=3,A=4,P=4,C=9)
 plotFun(cF(t,A=2,P=4,C=2)~ t, t.lim=range(0,20))
 ###################################################
+# pde
+q <- makeFun(x^2 + y^3 ~ x&y)
+q
+qx <- D(q(x,y) ~ x)
+qx(5,6)
+
+qy <- D(q(x,y) ~ y)
+qy(2,3)
+
+#######################################
+# Double Derivative
+
+sand <- makeFun(sin(x) ~ x)
+sand
+plotFun(sand(x) ~ x , x.lim=range(0,50))
+####################################
