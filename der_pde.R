@@ -40,3 +40,9 @@ sand <- makeFun(sin(x) ~ x)
 sand
 plotFun(sand(x) ~ x , x.lim=range(0,50))
 ####################################
+d_sand <- D(sand(x) ~ x)
+# double derivative
+d_sand(3)
+dd_sand <- D(sand(x) ~ x & x)
+plotFun(d_sand(x) ~ x , x.lim = range(0,10))
+plotFun(dd_sand(x) ~ x , x.lim = range(0,10))
