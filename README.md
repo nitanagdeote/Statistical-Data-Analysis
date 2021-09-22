@@ -1,2 +1,2 @@
 # Statistical Data Analysis
-data exploration
+R examples
