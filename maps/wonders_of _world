@@ -1,0 +1,11 @@
+#WIP
+#wonders of the world data
+data<- read.csv('/home/nita/Downloads/wonders_of_world.csv')
+head(data)
+summary(data)
+library(mapproj)
+map(database= "world")
+lon <- data$Longitude  
+lat <- data$Latitude  
+coord <- mapproject(lon, lat, proj="robin", orientation=c(90, 0, 225))  #convert points to projected lat/long
+points(coord, pch=20, cex=1.2, col="red")  #plot converted points
