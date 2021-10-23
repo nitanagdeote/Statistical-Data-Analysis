@@ -1,3 +1,29 @@
+#install.packages("maps")
+library(maps)
+###########################################################
+map() # low resolution map of the world
+map(database = "world")
+map(wrap = c(0,360), fill = TRUE, col = 2) 
+map(wrap = c(0, 360, NA), fill = TRUE, col = 2)
+map('usa')
+map('county', 'new jersey')	# county map of New Jersey
+map('state', region = c('new york', 'new jersey', 'penn'))	# map of three states
+map("state", ".*dakota", myborder = 0)	# map of the dakotas
+map.axes()	
+if(require(mapproj))
+  map('state', proj = 'bonne', param = 45)	# Bonne equal-area projection of states
+# names of the San Juan islands in Washington state
+map('county', 'washington,san', names = TRUE, plot = FALSE)
+# national boundaries in one linetype, states in another
+# (figure 5 in the reference)
+map("state", interior = FALSE)
+map("state", boundary = FALSE, lty = 2, add = TRUE)
+# plot the ozone data on a base map
+# (figure 4 in the reference)
+data(ozone)
+map("state", xlim = range(ozone$x), ylim = range(ozone$y))
+text(ozone$x, ozone$y, ozone$median)
+box()
 if(require(mapproj)) {	# mapproj is used for  projection="polyconic"
   # color US county map by 2009 unemployment rate
   # match counties to map using FIPS county codes
