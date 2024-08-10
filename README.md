@@ -1,7 +1,5 @@
 # Statistical Data Analysis
-R examples
-
-# README for Repository
+R examples from course work at UMass Lowell.
 
 ## Overview
 
